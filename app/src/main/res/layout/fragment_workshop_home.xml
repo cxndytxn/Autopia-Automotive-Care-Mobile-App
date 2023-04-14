@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F1F1F1"
+    tools:context=".activities.ui.fragments.home.WorkshopHomeFragment">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="@string/upcoming_appointment"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/workshop_home_rv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <com.alamkanak.weekview.WeekView
+        android:id="@+id/weekView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="55dp"
+        android:paddingVertical="8dp"
+        app:columnGap="12dp"
+        app:dayBackgroundColor="@color/light_grey"
+        app:defaultEventColor="@color/indigo_300"
+        app:eventTextColor="@color/white"
+        app:fontFamily="@font/open_sans"
+        app:headerBackgroundColor="@color/indigo_300"
+        app:headerPadding="12dp"
+        app:headerTextColor="@color/black"
+        app:headerTextSize="14sp"
+        app:hourHeight="60dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:numberOfVisibleDays="3"
+        app:showCurrentTimeFirst="true"
+        app:showHeaderBottomShadow="true"
+        app:timeColumnBackgroundColor="@color/white"
+        app:timeColumnPadding="8dp"
+        app:timeColumnTextColor="@color/black"
+        app:timeColumnTextSize="12sp"
+        app:todayBackgroundColor="@color/grey"
+        app:todayHeaderTextColor="@color/white" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/workshopHomeFragment"
+        android:icon="@drawable/home_selector"
+        android:title="@string/menu_home" />
+    <item
+        android:id="@+id/appointmentFragment"
+        android:icon="@drawable/appointment_selector"
+        android:title="@string/appointment" />
+    <item
+        android:id="@+id/historyFragment"
+        android:icon="@drawable/history_selector"
+        android:title="@string/history" />
+    <item
+        android:id="@+id/chatFragment"
+        android:icon="@drawable/chat_selector"
+        android:title="@string/chat" />
+    <item
+        android:id="@+id/workshopProfileFragment"
+        android:icon="@drawable/user_selector"
+        android:title="@string/profile" />
+</menu>

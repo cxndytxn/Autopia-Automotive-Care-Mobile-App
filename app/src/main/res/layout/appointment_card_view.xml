@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="10dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="10dp"
+    android:background="@drawable/rounded_card_background"
+    android:elevation="5dp">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/appointment_sp_image"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="10dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/appointment_sp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/appointment"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/navigate_button"
+        app:layout_constraintStart_toEndOf="@+id/appointment_sp_image"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/appointment_date_time"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="4dp"
+        android:text="@string/appointment"
+        app:layout_constraintEnd_toStartOf="@+id/navigate_button"
+        app:layout_constraintStart_toEndOf="@+id/appointment_sp_image"
+        app:layout_constraintTop_toBottomOf="@+id/appointment_sp" />
+
+    <TextView
+        android:id="@+id/appointment_vehicle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="4dp"
+        android:text="@string/appointment"
+        app:layout_constraintEnd_toStartOf="@+id/navigate_button"
+        app:layout_constraintStart_toEndOf="@+id/appointment_sp_image"
+        app:layout_constraintTop_toBottomOf="@+id/appointment_date_time" />
+
+    <TextView
+        android:id="@+id/appointment_task"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="15dp"
+        android:text="@string/appointment"
+        android:textColor="@color/indigo_300"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/constraintLayoutReschedule"
+        app:layout_constraintEnd_toStartOf="@+id/navigate_button"
+        app:layout_constraintStart_toEndOf="@+id/appointment_sp_image"
+        app:layout_constraintTop_toBottomOf="@+id/appointment_vehicle" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/navigate_button"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/rounded_white_button_background"
+        android:backgroundTint="#FFFFFF"
+        android:elevation="15dp"
+        android:insetLeft="0dp"
+        android:insetTop="0dp"
+        android:insetRight="0dp"
+        android:insetBottom="0dp"
+        android:paddingLeft="14dp"
+        android:paddingRight="14dp"
+        android:textColor="#FFFFFF"
+        app:backgroundTint="#FFFFFF"
+        app:icon="@drawable/navigate"
+        app:iconSize="20dp"
+        app:iconTint="#BBBFFF"
+        app:layout_constraintBottom_toTopOf="@id/constraintLayoutReschedule"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/feedback_button"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/rounded_white_button_background"
+        android:backgroundTint="#FFFFFF"
+        android:elevation="15dp"
+        android:insetLeft="3dp"
+        android:insetTop="0dp"
+        android:insetRight="0dp"
+        android:insetBottom="0dp"
+        android:paddingLeft="14dp"
+        android:paddingRight="14dp"
+        android:textColor="#FFFFFF"
+        android:visibility="gone"
+        app:backgroundTint="#FFFFFF"
+        app:icon="@drawable/feedback"
+        app:iconSize="20dp"
+        app:iconTint="#BBBFFF"
+        app:layout_constraintBottom_toTopOf="@id/constraintLayoutReschedule"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayoutReschedule"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <Button
+            android:id="@+id/rejectRescheduleButton"
+            style="@style/OpenSansButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#00FFFFFF"
+            android:paddingLeft="16dp"
+            android:paddingTop="2dp"
+            android:paddingRight="16dp"
+            android:paddingBottom="2dp"
+            android:text="@string/reject"
+            android:textAllCaps="false"
+            android:textColor="#FF0000"
+            app:iconTint="#FFFFFF"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:rippleColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/acceptRescheduleButton"
+            style="@style/OpenSansButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#00FFFFFF"
+            android:paddingLeft="0dp"
+            android:paddingRight="0dp"
+            android:text="@string/accept"
+            android:textAllCaps="false"
+            android:textColor="#FF999FFF"
+            app:iconTint="#FFFFFF"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/rejectRescheduleButton"
+            app:layout_constraintTop_toTopOf="parent"
+            app:rippleColor="#FFFFFF" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

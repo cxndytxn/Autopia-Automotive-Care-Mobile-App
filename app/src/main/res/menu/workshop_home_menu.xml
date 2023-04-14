@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_today"
+        android:icon="@drawable/date"
+        android:title="@string/action_today"
+        app:showAsAction="collapseActionView|ifRoom" />
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/oneDayView"
+            android:title="@string/one_day_view"
+            app:showAsAction="never" />
+        <item
+            android:id="@+id/threeDayView"
+            android:checked="true"
+            android:title="@string/three_day_view"
+            app:showAsAction="never" />
+        <item
+            android:id="@+id/fiveDayView"
+            android:title="@string/five_day_view"
+            app:showAsAction="never" />
+        <item
+            android:id="@+id/oneWeekView"
+            android:title="@string/week_view"
+            app:showAsAction="never" />
+    </group>
+</menu>

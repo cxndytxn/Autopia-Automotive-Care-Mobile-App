@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation2"
+    app:startDestination="@id/workshopHomeFragment">
+    <fragment
+        android:id="@+id/workshopHomeFragment"
+        android:name="com.example.autopia.activities.ui.fragments.home.WorkshopHomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_workshop_home" />
+    <fragment
+        android:id="@+id/addServiceFragment"
+        android:name="com.example.autopia.activities.ui.fragments.AddServiceFragment"
+        tools:layout="@layout/fragment_add_service" />
+    <fragment
+        android:id="@+id/workshopsFragment"
+        android:name="com.example.autopia.activities.ui.fragments.WorkshopsFragment"
+        android:label="fragment_all_service_providers"
+        tools:layout="@layout/fragment_all_service_providers" />
+    <fragment
+        android:id="@+id/appointmentFragment"
+        android:name="com.example.autopia.activities.ui.fragments.AppointmentFragment"
+        android:label="@string/appointment"
+        tools:layout="@layout/fragment_appointment" />
+    <fragment
+        android:id="@+id/chatFragment"
+        android:name="com.example.autopia.activities.ui.fragments.ConversationFragment"
+        android:label="@string/chat"
+        tools:layout="@layout/fragment_conversation" />
+    <dialog
+        android:id="@+id/datePickerFragment"
+        android:name="com.example.autopia.activities.ui.fragments.DatePickerFragment"
+        android:label="fragment_date_picker"
+        tools:layout="@layout/fragment_date_picker" />
+    <fragment
+        android:id="@+id/historyFragment"
+        android:name="com.example.autopia.activities.ui.fragments.HistoryFragment"
+        android:label="@string/history"
+        tools:layout="@layout/fragment_history" />
+    <fragment
+        android:id="@+id/nearbyWorkshopsFragment"
+        android:name="com.example.autopia.activities.ui.fragments.NearbyWorkshopsFragment"
+        android:label="fragment_nearby_service_providers"
+        tools:layout="@layout/fragment_nearby_service_providers" />
+    <fragment
+        android:id="@+id/workshopsListFragment"
+        android:name="com.example.autopia.activities.ui.fragments.WorkshopsListFragment"
+        android:label="fragment_service_provider_list"
+        tools:layout="@layout/fragment_service_provider_list" />
+    <fragment
+        android:id="@+id/servicesFragment"
+        android:name="com.example.autopia.activities.ui.fragments.ServicesFragment"
+        android:label="@string/services"
+        tools:layout="@layout/fragment_services" />
+    <activity
+        android:id="@+id/forgotPasswordActivity"
+        android:name="com.example.autopia.activities.ui.ForgotPasswordActivity"
+        android:label="activity_forgot_password"
+        tools:layout="@layout/activity_forgot_password" />
+    <activity
+        android:id="@+id/loginActivity"
+        android:name="com.example.autopia.activities.ui.LoginActivity"
+        android:label="activity_login"
+        tools:layout="@layout/activity_login" />
+    <activity
+        android:id="@+id/workshopSignUpActivity"
+        android:name="com.example.autopia.activities.ui.WorkshopSignUpActivity"
+        android:label="activity_service_provider_sign_up"
+        tools:layout="@layout/activity_service_provider_sign_up" />
+    <activity
+        android:id="@+id/signUpActivity"
+        android:name="com.example.autopia.activities.ui.SignUpActivity"
+        android:label="activity_sign_up"
+        tools:layout="@layout/activity_sign_up" />
+    <activity
+        android:id="@+id/splashActivity"
+        android:name="com.example.autopia.activities.ui.SplashActivity"
+        android:label="activity_splash"
+        tools:layout="@layout/activity_splash" />
+    <activity
+        android:id="@+id/workshopInfoActivity"
+        android:name="com.example.autopia.activities.ui.WorkshopInfoActivity"
+        android:label="activity_workshop_info"
+        tools:layout="@layout/activity_workshop_info" />
+    <activity
+        android:id="@+id/navigationDrawerActivity"
+        android:name="com.example.autopia.activities.ui.NavigationDrawerActivity"
+        android:label="app_bar_main"
+        tools:layout="@layout/app_bar_main" />
+    <activity
+        android:id="@+id/workshopNavigationDrawerActivity"
+        android:name="com.example.autopia.activities.ui.WorkshopNavigationDrawerActivity"
+        android:label="app_bar_workshop_navigation_drawer"
+        tools:layout="@layout/app_bar_workshop_navigation_drawer" />
+    <fragment
+        android:id="@+id/workshopProfileFragment"
+        android:name="com.example.autopia.activities.ui.fragments.WorkshopProfileFragment"
+        android:label="@string/profile" />
+    <fragment
+        android:id="@+id/pendingAppointmentsFragment2"
+        android:name="com.example.autopia.activities.ui.fragments.PendingAppointmentsFragment"
+        android:label="fragment_pending_appointments"
+        tools:layout="@layout/fragment_pending_appointments" />
+    <fragment
+        android:id="@+id/rejectedAppointmentsFragment2"
+        android:name="com.example.autopia.activities.ui.fragments.RejectedAppointmentsFragment"
+        android:label="fragment_rejected_appointments"
+        tools:layout="@layout/fragment_rejected_appointments" />
+    <fragment
+        android:id="@+id/upcomingAppointmentsFragment2"
+        android:name="com.example.autopia.activities.ui.fragments.UpcomingAppointmentsFragment"
+        android:label="fragment_upcoming_appointments"
+        tools:layout="@layout/fragment_upcoming_appointments" />
+    <fragment
+        android:id="@+id/appointmentDetailsFragment"
+        android:name="com.example.autopia.activities.ui.fragments.AppointmentDetailsFragment"
+        android:label="@string/appointment_details"
+        tools:layout="@layout/fragment_appointment_details" />
+    <fragment
+        android:id="@+id/chatRoomFragment"
+        android:name="com.example.autopia.activities.ui.fragments.ChatRoomFragment"
+        tools:layout="@layout/fragment_chat_room" />
+    <fragment
+        android:id="@+id/rescheduleAppointmentsFragment"
+        android:name="com.example.autopia.activities.ui.fragments.RescheduleAppointmentsFragment"
+        android:label="@string/reschedule_appointments"
+        tools:layout="@layout/fragment_reschedule_appointments" />
+    <fragment
+        android:id="@+id/workshopStatisticsFragment"
+        android:name="com.example.autopia.activities.ui.fragments.WorkshopInsightsFragment"
+        android:label="@string/insights"
+        tools:layout="@layout/fragment_workshop_insights" />
+    <fragment
+        android:id="@+id/noShowAppointmentsFragment2"
+        android:name="com.example.autopia.activities.ui.fragments.NoShowAppointmentsFragment"
+        android:label="fragment_no_show_appointments"
+        tools:layout="@layout/fragment_no_show_appointments" />
+    <fragment
+        android:id="@+id/bookingReviewFragment2"
+        android:name="com.example.autopia.activities.ui.fragments.BookingReviewFragment"
+        android:label="fragment_reschedule_appointments"
+        tools:layout="@layout/fragment_reschedule_appointments" />
+    <fragment
+        android:id="@+id/notificationsFragment"
+        android:name="com.example.autopia.activities.ui.fragments.NotificationsFragment"
+        android:label="@string/notifications"
+        tools:layout="@layout/fragment_notifications" />
+    <fragment
+        android:id="@+id/appointmentInfoFragment"
+        android:name="com.example.autopia.activities.ui.fragments.AppointmentInfoFragment"
+        android:label="@string/service_reminder"
+        tools:layout="@layout/fragment_appointment_info" />
+    <fragment
+        android:id="@+id/viewServicesFragment"
+        android:name="com.example.autopia.activities.ui.fragments.SelectServiceFragment"
+        android:label="@string/services"
+        tools:layout="@layout/fragment_view_services" />
+    <fragment
+        android:id="@+id/productsFragment"
+        android:name="com.example.autopia.activities.ui.fragments.ProductsFragment"
+        android:label="@string/products"
+        tools:layout="@layout/fragment_products" />
+    <fragment
+        android:id="@+id/addProductFragment"
+        android:name="com.example.autopia.activities.ui.fragments.AddProductFragment"
+        android:label="@string/add_product"
+        tools:layout="@layout/fragment_add_product" />
+    <fragment
+        android:id="@+id/workshopFeedbacksFragment"
+        android:name="com.example.autopia.activities.ui.fragments.WorkshopFeedbacksFragment"
+        android:label="@string/feedbacks"
+        tools:layout="@layout/fragment_workshop_feedback" />
+    <fragment
+        android:id="@+id/feedbackDetailsFragment"
+        android:name="com.example.autopia.activities.ui.fragments.FeedbackDetailsFragment"
+        android:label="@string/feedback"
+        tools:layout="@layout/fragment_feedback_details" />
+    <fragment
+        android:id="@+id/customerRelationshipManagementFragment"
+        android:name="com.example.autopia.activities.ui.fragments.CustomerRelationshipManagementFragment"
+        android:label="@string/promotions_customers"
+        tools:layout="@layout/fragment_customer_relationship_management" />
+    <fragment
+        android:id="@+id/customersFragment"
+        android:name="com.example.autopia.activities.ui.fragments.CustomersFragment"
+        android:label="@string/customers"
+        tools:layout="@layout/fragment_customers" />
+    <fragment
+        android:id="@+id/promotionsFragment"
+        android:name="com.example.autopia.activities.ui.fragments.PromotionsFragment"
+        android:label="@string/promotions"
+        tools:layout="@layout/fragment_promotions" />
+    <fragment
+        android:id="@+id/addPromotionFragment"
+        android:name="com.example.autopia.activities.ui.fragments.AddPromotionFragment"
+        android:label="@string/add_promotion"
+        tools:layout="@layout/fragment_add_promotion" />
+    <fragment
+        android:id="@+id/promotionDetailsFragment"
+        android:name="com.example.autopia.activities.ui.fragments.PromotionDetailsFragment"
+        android:label="@string/promotion"
+        tools:layout="@layout/fragment_promotion_details" />
+</navigation>

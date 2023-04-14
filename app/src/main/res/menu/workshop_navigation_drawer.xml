@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/notificationsFragment"
+            android:icon="@drawable/notifications"
+            android:title="@string/notifications" />
+        <item
+            android:id="@+id/servicesFragment"
+            android:icon="@drawable/services"
+            android:title="@string/services" />
+        <item
+            android:id="@+id/productsFragment"
+            android:icon="@drawable/product"
+            android:title="@string/products" />
+        <item
+            android:id="@+id/customerRelationshipManagementFragment"
+            android:icon="@drawable/promotion"
+            android:title="@string/promotions_customers" />
+        <item
+            android:id="@+id/workshopFeedbacksFragment"
+            android:icon="@drawable/feedback"
+            android:title="@string/feedbacks" />
+        <item
+            android:id="@+id/workshopStatisticsFragment"
+            android:icon="@drawable/statistics"
+            android:title="@string/insights" />
+    </group>
+
+    <group android:checkableBehavior="single">
+        <item android:title="@string/account">
+            <menu>
+                <item
+                    android:id="@+id/logInActivity"
+                    android:icon="@drawable/login"
+                    android:title="@string/login" />
+                <item
+                    android:id="@+id/signUpActivity"
+                    android:icon="@drawable/sign_up"
+                    android:title="@string/signup" />
+                <item
+                    android:id="@+id/logoutActivity"
+                    android:icon="@drawable/logout"
+                    android:title="@string/logout" />
+            </menu>
+        </item>
+
+    </group>
+
+</menu>
