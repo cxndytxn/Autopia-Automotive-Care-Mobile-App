@@ -1,4 +1,4 @@
-# Autopia-Automotive-Care-Mobile-App
+# Autopia: Automotive Care Mobile App
 :oncoming_automobile: Autopia is an Android CRM mobile application built using Kotlin to boost the SME-based automotive workshops' business. <br />
 :iphone: Its main functionalities include searching/viewing workshops, chatting, placing service appointments, receiving service reminders, providing ratings and reviews etc. to encourage a quality-driven environment within the SME automotive workshop industry.
 
