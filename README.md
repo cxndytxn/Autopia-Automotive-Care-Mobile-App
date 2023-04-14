@@ -1,5 +1,6 @@
 # Autopia: Automotive Care Mobile App
-:oncoming_automobile: Autopia is an Android CRM mobile application built using Kotlin to boost the SME-based automotive workshops' business. <br />
+:oncoming_automobile: Autopia is an Android (Kotlin) CRM mobile application fo SME-based automotive workshops. <br />
+:cloud: Its RESTful backend is built using ASP.NET Core and AWS cloud technologies such as Lambda, API Gateway, and RDS. <br />
 :iphone: Its main functionalities include searching/viewing workshops, chatting, placing service appointments, receiving service reminders, providing ratings and reviews etc. to encourage a quality-driven environment within the SME automotive workshop industry.
 
 # Author
@@ -19,9 +20,6 @@
     <td>Sign Up Screen</td>
     <td>Landing Screen</td>
     <td>Workshops Screen</td>
-    <td>Appointment Booking Screen</td>
-    <td>Service Reminder Screen</td>
-    <td>Add Vehicle Screen</td>
   </tr>
   <tr>
     <td>
@@ -33,5 +31,10 @@
     <td>
       <img src="https://user-images.githubusercontent.com/72306553/229395799-5d65ec12-a1b3-4ce7-b461-b55f2e8a49fc.PNG" height="450" alt="Restaurants Screen" />
     </td>
+  </tr>
+  <tr>
+    <td>Appointment Booking Screen</td>
+    <td>Service Reminder Screen</td>
+    <td>Add Vehicle Screen</td>
   </tr>
 </table>
