@@ -13,11 +13,15 @@
 # UI Designs
 :art: Sample UI designs done by [@cxndytxn](https://www.github.com/cxndytxn) using Marvel App.
 
+## Users
 <table>
   <tr>
     <td>Sign Up Screen</td>
     <td>Landing Screen</td>
-    <td>Restaurants Screen</td>
+    <td>Workshops Screen</td>
+    <td>Appointment Booking Screen</td>
+    <td>Service Reminder Screen</td>
+    <td>Add Vehicle Screen</td>
   </tr>
   <tr>
     <td>
