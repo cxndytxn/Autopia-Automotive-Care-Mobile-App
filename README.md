@@ -29,7 +29,7 @@
       <img src="https://user-images.githubusercontent.com/72306553/232066484-04b864cc-01bc-4c85-8a2a-83a6e885c33e.png" height="450" alt="Landing Screen" />
     </td>
     <td>
-      <img src="https://user-images.githubusercontent.com/72306553/229395799-5d65ec12-a1b3-4ce7-b461-b55f2e8a49fc.PNG" height="450" alt="Restaurants Screen" />
+      <img src="https://user-images.githubusercontent.com/72306553/232226063-54dd7b6f-9b87-43bd-bd3f-ddc5e278f4d2.png" height="450" alt="Restaurants Screen" />
     </td>
   </tr>
   <tr>
